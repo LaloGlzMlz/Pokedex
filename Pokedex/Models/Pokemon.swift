@@ -84,7 +84,7 @@ struct Pokemon: Decodable, Identifiable {
         height = try container.decode(Int.self, forKey: .height)
         weight = try container.decode(Int.self, forKey: .weight)
         
-        // Decode types
+        // Types
         var decodedTypes: [String] = []
         var typesContainer = try container.nestedUnkeyedContainer(forKey: .types)
         while !typesContainer.isAtEnd {
@@ -95,7 +95,7 @@ struct Pokemon: Decodable, Identifiable {
         }
         types = decodedTypes
         
-        // Decode stats
+        // Stats
         var decodedStatsDict: [String: Int] = [:]
         var statsContainer = try container.nestedUnkeyedContainer(forKey: .stats)
         while !statsContainer.isAtEnd {
@@ -113,12 +113,12 @@ struct Pokemon: Decodable, Identifiable {
         specialDefense = decodedStatsDict["special-defense"] ?? 0
         speed = decodedStatsDict["speed"] ?? 0
         
-        // Decode sprites
+        // Sprites
         let spriteContainer = try container.nestedContainer(keyedBy: CodingKeys.SpriteKeys.self, forKey: .sprites)
         spriteURL = try spriteContainer.decode(URL.self, forKey: .spriteURL)
         shinyURL = try spriteContainer.decode(URL.self, forKey: .shinyURL)
         
-        // Decode moves
+        // Moves
         var decodedMoves: [String] = []
         var movesContainer = try container.nestedUnkeyedContainer(forKey: .moves)
         while !movesContainer.isAtEnd {
@@ -129,7 +129,7 @@ struct Pokemon: Decodable, Identifiable {
         }
         moves = decodedMoves
         
-        // Decode abilities
+        // Abilities
         var decodedAbilities: [String] = []
         var abilitiesContainer = try container.nestedUnkeyedContainer(forKey: .abilities)
         while !abilitiesContainer.isAtEnd {

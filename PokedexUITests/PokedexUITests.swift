@@ -61,7 +61,7 @@ final class PokedexUITests: XCTestCase {
         let filteredCell = app.cells.firstMatch
         
         // Verify the filtered result is correct
-        XCTAssertTrue(filteredCell.staticTexts["Bulbasaur"].exists, "The filtered Pokémon cell should contain 'Mewtwo'.")
+        XCTAssertTrue(filteredCell.staticTexts["Bulbasaur"].exists, "The filtered Pokémon cell should contain 'Bulbasaur'.")
     }
 
     func testAbilitiesDisclosureGroupOpens() {
