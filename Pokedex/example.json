@@ -1,0 +1,74 @@
+{
+  "abilities": [
+    {
+      "ability": {
+        "name": "limber"
+      }
+    },
+    {
+      "ability": {
+        "name": "imposter"
+      }
+    }
+  ],
+  "height": 3,
+  "id": 132,
+  "moves": [
+    {
+      "move": {
+        "name": "transform"
+      }
+    }
+  ],
+  "name": "ditto",
+  "sprites": {
+    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png"
+  },
+  "stats": [
+    {
+      "base_stat": 48,
+      "stat": {
+        "name": "hp"
+      }
+    },
+    {
+      "base_stat": 48,
+      "stat": {
+        "name": "attack"
+      }
+    },
+    {
+      "base_stat": 48,
+      "stat": {
+        "name": "defense"
+      }
+    },
+    {
+      "base_stat": 48,
+      "stat": {
+        "name": "special-attack"
+      }
+    },
+    {
+      "base_stat": 48,
+      "stat": {
+        "name": "special-defense"
+      }
+    },
+    {
+      "base_stat": 48,
+      "stat": {
+        "name": "speed"
+      }
+    }
+  ],
+  "types": [
+    {
+      "type": {
+        "name": "normal"
+      }
+    }
+  ],
+  "weight": 40
+}
