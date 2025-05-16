@@ -15,7 +15,7 @@ struct FetchPokemonService: FetchPokemonServiceProtocol {
     
     private let baseURL = URL(string: "https://pokeapi.co/api/v2/pokemon")!
     
-    /// Fetches Pokemon by ID from the PokéAPI.
+    /// Asynchronously fetches Pokemon by ID from the PokéAPI.
     ///
     /// - Parameter id: ID of Pokemon to retrieve.
     /// - Returns: A `Pokemon` object containing the fetched data.
